@@ -10,7 +10,7 @@ true_intercept = 5.0
 noise = np.random.normal(0, 2, num_points)
 x = np.linspace(0, 10, num_points)
 y = true_slope * x + true_intercept + noise
-print("type")
+
 print(type(x), np.shape(x))
 print(type(y), np.shape(y))
 # Reshape the data for sklearn
@@ -31,6 +31,7 @@ y = np.array([9.51249027, 9.74712767, 9.69643707, 9.76802867, 9.8035509 ,
                    9.67864722, 9.38115461, 9.66811141, 9.97211893, 9.71191471,
                    9.34267015])
 
+# add
 
 x_reshaped = x.reshape(-1, 1)
 model = LinearRegression()
